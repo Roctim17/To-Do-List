@@ -28,12 +28,13 @@ document.getElementById('basic-addon2').addEventListener("click", function () {
         const doneBtn = document.getElementsByClassName('done');
         for (const button of deleteBtn) {
             button.addEventListener("click", function (e) {
-                e.target.parentNode.parentNode.style.display = "none";
+                e.target.parentNode.parentNode.parentNode.style.display = "none";
+                console.log(e.target.parentNode)
             });
         }
         for (const button of doneBtn) {
             button.addEventListener("click", function (e) {
-                e.target.parentNode.parentNode.style.textDecoration = "line-through";
+                e.target.parentNode.parentNode.parentNode.style.textDecoration = "line-through";
             })
         }
     }
