@@ -20,7 +20,6 @@ document.getElementById('basic-addon2').addEventListener("click", function () {
         </td>`
         listItem.appendChild(createTR);
         document.getElementById("input-list").value = '';
-        console.log('click');
         const deleteBtn = document.getElementsByClassName('delete');
         const doneBtn = document.getElementsByClassName('done');
         for (const button of deleteBtn) {
