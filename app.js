@@ -14,13 +14,13 @@ document.getElementById('basic-addon2').addEventListener("click", function () {
         const createTR = document.createElement('tr');
         createTR.innerHTML = `<th scope="row">${count}</th>
         <td id="inValue">${inputValue}</td>
-        <td>
-        <button class="delete btn btn-danger rounded-3 text-light "><img src="icon/trash.png"
-        alt="" style="width: 25px;height: 25px;"></button>
-<button class="done btn btn-success rounded-3 text-light"><img src="icon/tick.png"
-        alt="" style="width: 25px;height: 25px;"></button>
-<button class="btn btn-success rounded-3 text-light"><img src="icon/pencil.png"
-        alt="" style="width: 25px;height: 25px;"></button>
+        <td class="w-50">
+                                        <button class="delete btn btn-danger rounded-3 text-light "><img
+                                                src="icon/trash.png" alt="" style="width: 15px;height: 15px;"></button>
+                                        <button class="done btn btn-success rounded-3 text-light"><img
+                                                src="icon/tick.png" alt="" style="width: 15px;height: 15px;"></button>
+                                        <button class="btn btn-success rounded-3 text-light"><img src="icon/pencil.png"
+                                                alt="" style="width: 15px;height: 15px;"></button>
         </td>`
         listItem.appendChild(createTR);
         document.getElementById("input-list").value = '';
